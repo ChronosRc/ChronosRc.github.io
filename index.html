@@ -147,26 +147,49 @@
             font-size: 12px;
             opacity: 0.7;
         }
+
+        /* Regras Específicas para Dispositivos Móveis */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden; 
+            }
+
+            .container {
+                padding: 0 6%; 
+            }
+            
+            .hero h1 {
+                font-size: 24px; 
+            }
+            
+            .about-text {
+                text-align: left; 
+                font-size: 15px;
+            }
+
+            .pilares-grid {
+                gap: 15px;
+                margin-top: 30px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header class="container">
-        <!-- Aplicação do Símbolo Claro em fundo Off White -->
         <img src="image_74f96c.png" alt="Símbolo Samuel Richard Claro" class="logo-clara">
     </header>
 
     <section class="hero container">
         <h1>Engenharia de Custos & BIM</h1>
-        <!-- Lema e Proposta de Valor[cite: 1] -->
-        <p>Previsibilidade e eficiência: redução real de custos através de engenharia em BIM</p>
-        <a href="https://wa.me/82988936695" class="btn-contato">Solicitar Orçamento</a>
+        <p>"Previsibilidade radical, eficiência cirúrgica: redução real de custos através de engenharia 100% BIM."</p>
+        <a href="https://wa.me/5582900000000" class="btn-contato">Solicitar Orçamento</a>
     </section>
 
     <section class="section container">
         <h2 class="section-title">Sobre a Empresa</h2>
         <p class="about-text">
-            Sob a liderança técnica de Samuel Richard, a marca nasce para preencher uma lacuna crítica na construção civil: a falta de previsibilidade financeira rigorosa. O foco é converter autoridade técnica em exatidão.
+            Sob a liderança técnica de Samuel Richard, a marca nasce para preencher uma lacuna crítica na construção civil: a falta de previsibilidade financeira rigorosa. Como concluinte de Engenharia Civil na UFAL e com mais de 2 anos de atuação prática, o foco é converter autoridade técnica em exatidão.
         </p>
         <p class="about-text">
             O portfólio abrange obras complexas, desde edifícios verticais multifamiliares e empresariais até loteamentos e obras públicas, sempre operando na intersecção entre a ciência de dados, modelagem 5D e engenharia econômica. Utilizando ferramentas avançadas como Revit, Orçafascio e Visus Cost Management, garantimos que a contratação não seja um custo, mas o maior vetor de economia e blindagem de capital da sua obra.
@@ -176,7 +199,6 @@
     <section class="section container" style="border-bottom: none;">
         <h2 class="section-title">Nossos Pilares</h2>
         <div class="pilares-grid">
-            <!-- Os quatro atributos fundamentais da marca[cite: 1] -->
             <div class="pilar-card">
                 <h3>Seriedade</h3>
                 <p>Rigor técnico, cumprimento estrito de prazos e uso de bases analíticas sólidas.</p>
@@ -198,7 +220,6 @@
 
     <footer>
         <div class="container">
-            <!-- Aplicação do Símbolo Escuro em fundo Grafite[cite: 1] -->
             <img src="image_74f984.png" alt="Símbolo Samuel Richard Escuro" class="logo-escura">
             <p>Samuel Richard - Engenharia de Custos & BIM.</p>
             <p>Modelagem Virtual 5D e Inteligência Financeira.</p>
